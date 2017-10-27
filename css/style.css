@@ -1,1 +1,10 @@
-/* Custom styles go here. */
+/* navbar */
+.navbar {
+	background-color: yellowgreen;
+}
+.navbar-inverse .navbar-brand {
+	color: navy;
+}
+.navbar-inverse .navbar-nav >li >a {
+	color: navy;
+}

@@ -7,11 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <!-- TODO: Add proper viewport meta tag to make page properly display on mobile devices. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Wine Shop">
+    <meta name="author" content="Becky Peltz">
 
-    <title>Modern Business - Start Bootstrap Template</title>
+    <title>Wine Shop</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -35,7 +36,35 @@
 <body>
 
     <!-- Navigation -->
+    <!--https://getbootstrap.com/docs/3.3/components/#navbar-->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <!-- create a navigation toggle button -->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+            <span class="sr-only">Toggle Naviation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+                <a class="navbar-brand" href="index.html">Wine Shop</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="services.html">Services</a>
+                    </li>
+                    <li>
+                        <a href="portfolio-1-col.html">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="promotion.html">Promotion</a>
+                    </li>
+                </ul>
+            </div>
     </nav>
 
     <!-- Header Carousel -->
@@ -228,9 +257,9 @@
 
     <!-- Script to Activate the Carousel -->
     <script>
-    $('.carousel').carousel({
-        interval: 5000 //changes the speed
-    })
+        $('.carousel').carousel({
+            interval: 5000 //changes the speed
+        })
     </script>
 
 </body>
