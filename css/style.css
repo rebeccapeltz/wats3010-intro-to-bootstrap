@@ -17,3 +17,10 @@ div.carousel-caption h2{
 	width: 200px;
 	border-radius: 20px;
 }
+
+ .top-wine .fa-circle {
+	color: #660033;
+}
+.top-wine .btn {
+	background: #660033;
+}

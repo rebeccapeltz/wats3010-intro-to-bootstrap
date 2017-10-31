@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-        <!-- https://getbootstrap.com/docs/3.3/css/ -->
+
 <head>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
+    <!-- https://www.w3schools.com/css/css_rwd_viewport.asp -->
     <!-- TODO: Add proper viewport meta tag to make page properly display on mobile devices. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="Wine Shop">
+    <meta name="description" content="The Wine Shop">
     <meta name="author" content="Becky Peltz">
 
-    <title>The Wine Shop</title>
+    <title>The Web Shop</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="css/modern-business.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-demo.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -36,36 +38,26 @@
 <body>
 
     <!-- Navigation -->
-    <!--https://getbootstrap.com/docs/3.3/components/#navbar-->
-    <!-- https://www.w3schools.com/icons/fontawesome_icons_webapp.asp -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <!-- create a navigation toggle button -->
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
-                    <span class="sr-only">Toggle Naviation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html">Wine Shop</a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="about.html">Blog</a>
-                    </li>
-                    <li>
-                        <a href="services.html">Top Wines</a>
-                    </li>
-                    <li>
-                        <a href="portfolio-1-col.html">Contact</a>
-                    </li>
-                    <li>
-                        <a href="about.html">About</a>
-                    </li>
-                </ul>
-            </div>
+            <div class="container-fluid">
+                    <div class="navbar-header">
+                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span> 
+                      </button>
+                      <a class="navbar-brand" href="#">The Wine Store</a>
+                    </div>
+                    <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+                      <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="service.html">Top Wines</a></li>
+                        <li><a href="contact.html">Contact</a></li> 
+                        <li><a href="about.html">About</a></li> 
+                      </ul>
+                      
+                    </div>
+                  </div>
     </nav>
 
     <!-- Header Carousel -->
@@ -79,33 +71,24 @@
 
         <!-- Wrapper for slides -->
 
-        <!-- TODO: Add images to your repository and update this code so the carousel has proper slides. -->
 
         <div class="carousel-inner">
-
             <div class="item active">
                 <div class="fill" style="background-image:url('images/caro-grapes.jpg');"></div>
                 <div class="carousel-caption">
-                    <h2>From Grapes</h2>
+                    <h2>Grapes</h2>
                 </div>
             </div>
-
             <div class="item">
                 <div class="fill" style="background-image:url('images/caro-bottles.jpg');"></div>
                 <div class="carousel-caption">
-                    <h2>To Wine</h2>
-                </div>
-            </div>
-            <div class="item">
-                <div class="fill" style="background-image:url('images/wine-test.jpeg');"></div>
-                <div class="carousel-caption">
-                    <h2>To Pour</h2>
+                    <h2>Bottles</h2>
                 </div>
             </div>
             <div class="item">
                 <div class="fill" style="background-image:url('images/caro-tasting.jpg');"></div>
                 <div class="carousel-caption">
-                    <h2>To Tasting</h2>
+                    <h2>Tasting</h2>
                 </div>
             </div>
         </div>
@@ -126,19 +109,16 @@
         <div class="row">
             <div class="col-lg-12">
                 <h1 class="page-header">
-                    Welcome to The Wine Shop
+                    Welcome to Modern Business
                 </h1>
             </div>
             <div class="col-md-4">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h4>
-                            <i class="fa fa-fw fa-check"></i> Bootstrap v3.3.7</h4>
+                        <h4><i class="fa fa-fw fa-check"></i> Bootstrap v3.3.7</h4>
                     </div>
                     <div class="panel-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur
-                            in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt
-                            dicta nostrum quod?</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
                         <a href="#" class="btn btn-default">Learn More</a>
                     </div>
                 </div>
@@ -146,13 +126,10 @@
             <div class="col-md-4">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h4>
-                            <i class="fa fa-fw fa-gift"></i> Free &amp; Open Source</h4>
+                        <h4><i class="fa fa-fw fa-gift"></i> Free &amp; Open Source</h4>
                     </div>
                     <div class="panel-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur
-                            in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt
-                            dicta nostrum quod?</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
                         <a href="#" class="btn btn-default">Learn More</a>
                     </div>
                 </div>
@@ -160,13 +137,10 @@
             <div class="col-md-4">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h4>
-                            <i class="fa fa-fw fa-compass"></i> Easy to Use</h4>
+                        <h4><i class="fa fa-fw fa-compass"></i> Easy to Use</h4>
                     </div>
                     <div class="panel-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur
-                            in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt
-                            dicta nostrum quod?</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
                         <a href="#" class="btn btn-default">Learn More</a>
                     </div>
                 </div>
@@ -183,8 +157,8 @@
                 <h2 class="page-header">Portfolio Heading</h2>
             </div>
             <div class="col-md-4 col-sm-6">
-                <a href="images/portfolio-1.jpg">
-                    <img class="img-responsive img-portfolio img-hover" src="images/portfolio-1.jpg" alt="">
+                <a href="portfolio-item.html">
+                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
                 </a>
             </div>
             <div class="col-md-4 col-sm-6">
@@ -223,8 +197,7 @@
             <div class="col-md-6">
                 <p>The Modern Business template by Start Bootstrap includes:</p>
                 <ul>
-                    <li>
-                        <strong>Bootstrap v3.3.7</strong>
+                    <li><strong>Bootstrap v3.3.7</strong>
                     </li>
                     <li>jQuery v1.11.1</li>
                     <li>Font Awesome v4.2.0</li>
@@ -232,13 +205,10 @@
                     <li>Unstyled page elements for easy customization</li>
                     <li>17 HTML pages</li>
                 </ul>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit,
-                    quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus
-                    unde.
-                </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit, quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus unde.</p>
             </div>
             <div class="col-md-6">
-                <img class="img-responsive" src="images/portfolio-1.jpg" alt="">
+                <img class="img-responsive" src="http://placehold.it/700x450" alt="">
             </div>
         </div>
         <!-- /.row -->
@@ -249,8 +219,7 @@
         <div class="well">
             <div class="row">
                 <div class="col-md-8">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum deleniti
-                        beatae veniam harum neque nemo praesentium cum alias asperiores commodi.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum deleniti beatae veniam harum neque nemo praesentium cum alias asperiores commodi.</p>
                 </div>
                 <div class="col-md-4">
                     <a class="btn btn-lg btn-default btn-block" href="#">Call to Action</a>
@@ -264,7 +233,7 @@
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; The Wine Shop 2017</p>
+                    <p>Copyright &copy; Your Website 2014</p>
                 </div>
             </div>
         </footer>
@@ -280,9 +249,9 @@
 
     <!-- Script to Activate the Carousel -->
     <script>
-        $('.carousel').carousel({
-            interval: 3000 //changes the speed
-        })
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
     </script>
 
 </body>
